@@ -1,5 +1,3 @@
-const server = require('http').createServer();
-
 const pokemon = require('pokemon');
 const path = require('path');
 
