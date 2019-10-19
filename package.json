@@ -1,0 +1,16 @@
+{
+  "name": "clovece-nezlob-se-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pokemon": "^2.0.0",
+    "socket.io": "^2.3.0"
+  }
+}
