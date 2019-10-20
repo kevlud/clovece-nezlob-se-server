@@ -109,9 +109,6 @@ io.on('connection', (socket) => {
 
 
 class GameTurner {
-
-    users = [];
-
     firstPlayer = null;
     currentPlayer = null;
 
