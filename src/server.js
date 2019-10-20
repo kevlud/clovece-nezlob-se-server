@@ -1,4 +1,4 @@
-const pokemon = require('pokemon');
+const pokemon = require('pokemon/index');
 const express = require('express');
 const socketIO = require('socket.io');
 const path = require('path');
@@ -112,12 +112,12 @@ class GameTurner {
     firstPlayer = null;
     currentPlayer = null;
 
-    nextPlayerTurn = () => {
+    nextPlayerTurn() {
         this.currentPlayer = this.currentPlayer.next;
         return this.currentPlayer;
     }
 
-    appendPlayer = (player) => {
+    appendPlayer(player) {
         if (this.firstPlayer == null) {
             this.firstPlayer = player;
             this.currentPlayer = player;
@@ -128,7 +128,7 @@ class GameTurner {
         this.currentPlayer = player;
     }
 
-    closeChain = () => {
+    closeChain () {
         this.currentPlayer.next = this.firstPlayer;
     }
 }
