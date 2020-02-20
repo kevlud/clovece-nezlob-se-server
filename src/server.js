@@ -5,6 +5,7 @@ const path = require('path');
 
 // THIS IS NICE
 // TJIS IZ BETAR
+// TOTO JE OPET MASTER
 const PORT = process.env.PORT || 3000;
 const INDEX = path.join(__dirname, 'index.html');
 
